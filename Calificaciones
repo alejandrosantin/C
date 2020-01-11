@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(){
+	float parcial,final,tf,cf;
+	
+	printf("Calificacion de examen parcial: \n");
+	scanf("%f",&parcial);
+	printf("==================================== \n");
+	printf("Calificacion de examen final: \n");
+	scanf("%f",&final);
+	printf("==================================== \n"); 
+	printf("Calificacion de trabajo final: \n");
+	scanf("%f",&tf);
+	printf("==================================== \n");
+	cf = (0.55*parcial) + (0.3*final) + (0.15*tf);
+	printf("Su calificacion final es: %.2f \n",cf);
+	printf("==================================== \n");
+
+	if(cf>=6){
+		printf("APROBADO \n");
+		printf("==================================== \n");
+	}
+	if(cf<6){
+		printf("DESAPROBADO \n");
+		printf("==================================== \n");
+	}
+
+
+	return 0;
+}
