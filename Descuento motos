@@ -1,0 +1,62 @@
+/*Problema 10: Una distribuidora de motocicletas tiene una promocion de fin de año que
+consiste en lo siguiente. Las motos marca Honda tienen un descuento del 5%, las marcas Yamaha del 8%
+y las Suzuki del 10%, las otras marcar 2%*/
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+	char marca;
+	float precio,descuento,pf;
+
+	printf("Ingrese la marca de la moto que desea comprar: \n");
+	scanf("%c",&marca);
+
+	if(marca=='Honda'){
+		system("cls");
+		printf("Tiene un descuento del 5 por ciento \n");
+		printf("-------------------------------------------- \n");
+	}
+	if(marca=='Honda'){
+		fflush(stdin);
+		printf("Ingrese el precio: \n");scanf("%f",&precio);
+		descuento = (float)precio * (float)0.05;
+		pf = precio - descuento;
+		printf("El precio final es: %.2f \n",pf);
+	}
+	if(marca=='Yamaha'){
+		system("cls");
+		printf("Tiene un descuento del 8 por ciento \n");
+		printf("-------------------------------------------- \n");
+	}
+	if(marca=='Yamaha'){
+		fflush(stdin);
+		printf("Ingrese el precio: \n");scanf("%f",&precio);
+		descuento = (float)precio * (float)0.08;
+		pf = precio - descuento;
+		printf("El precio final es: %.2f \n",pf);
+	}
+	if(marca=='Suzuki'){
+		system("cls");
+		printf("Tiene un descuneto del 10 por ciento \n");
+		printf("----------------------------------------------------- \n");
+	}
+	if(marca=='Suzuki'){
+		fflush(stdin);
+		printf("Ingrese el precio: \n");scanf("%f",&precio);
+		descuento = (float)precio * (float)0.1;
+		pf = precio - descuento;
+		printf("El precio final es: %.2f \n",pf);
+	}
+	else if(marca!='Honda' && marca!='Suzuki' && marca!='Yamaha'){
+		fflush(stdin);
+		system("cls");
+		printf("Tiene un descueno del 2 por ciento \n");
+		printf("Ingrese el precio: \n");scanf("%f",&precio);
+		descuento = (float)precio * (float)0.02;
+		pf = precio - descuento;
+		printf("El precio final es: %.2f \n",pf);
+	}
+
+	return 0;
+}
